@@ -1,7 +1,7 @@
-# Custom Logging Starter
+# Custom Logging Starter  
+  
+_Auto-configurable starter for recording TRACED log outputs using **[Slf4j](https://www.slf4j.org)** + **[Logback](https://logback.qos.ch)** for Spring Boot Applications._
 
-_Auto-configurable starter for recording TRACED log outputs
-using **[Slf4j](https://www.slf4j.org)** + **[Logback](https://logback.qos.ch)** for Spring Boot Applications._
 ---
 
 # Appenders
@@ -25,12 +25,13 @@ Three appenders are available:
 
 ---
 
-# Instrumentation (Distributed Trace)
+# Instrumentation (Distributed Trace)  
 
 In order to track requests between different microservices,
 the [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth) library was used, which provides trace and
 span id's automatically injecting them into the Slf4j MDC
 (_Mapped Diagnostic Context_) and propagating to all log appenders.
+  
 ---
 
 # Metadata

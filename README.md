@@ -1,5 +1,4 @@
-# Custom Logging Starter  
-![image](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+# Custom Logging Starter  ![image](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
   
 _Auto-configurable starter for recording TRACED log outputs using **[Slf4j](https://www.slf4j.org)** + **[Logback](https://logback.qos.ch)** for Spring Boot Applications._
 

@@ -1,0 +1,8 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.example.appname.log.properties.LogProperties,\
+  com.example.appname.log.web.service.LogHttpRequest, \
+  com.example.appname.log.web.service.LogHttpResponse, \
+  com.example.appname.log.web.interceptor.HttpRequestLogging, \
+  com.example.appname.log.web.LoggingWebConfig, \
+  com.example.appname.log.appender.AppenderConfig

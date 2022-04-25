@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+    <include resource="default-appenders.xml"/>
+
+    <!-- SPRING INI -->
+    <logger name="org.springframework" level="WARN" additivity="false">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+    </logger>
+
+    <logger name="org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler" additivity="false">
+        <appender-ref ref="NOP_APPENDER"/>
+    </logger>
+    <!-- SPRING END -->
+
+    <!-- APPLICATION INI -->
+    <logger name="com.example.appname" level="${LOG_LEVEL:-INFO}" additivity="false">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+    </logger>
+    <!-- APPLICATION END -->
+
+    <root level="${LOG_LEVEL:-INFO}">
+        <appender-ref ref="CONSOLE_APPENDER"/>
+    </root>
+</configuration>
